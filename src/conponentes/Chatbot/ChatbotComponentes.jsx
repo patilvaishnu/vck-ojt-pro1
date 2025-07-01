@@ -17,7 +17,7 @@ const ChatbotComponent = () => {
   const [isKnowledgeBaseLoading, setIsKnowledgeBaseLoading] = useState(true);
   const isOnline = useOnlineStatus();
   const [isChatOpen, setIsChatOpen] = useState(false);
-  // Preparing the knowledge base data
+  //Preparing the knowledge base data
   useEffect(() => {
     const prepareKB = async () => {
       const newKB = JSON.parse(JSON.stringify(KNOWLEDGE_BASE_DATA)); // Create a deep copy of KNOWLEDGE_BASE_DATA
